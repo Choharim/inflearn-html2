@@ -5,31 +5,54 @@
     <title>Form</title>
 </head>
 <body>
-<form action="" method="POST" align="center">
+<div>
+    <h1 align="center">Introduce Yourself</h1>
+    <hr>
+</div><br>
+<div>
+    <form action="" method="POST" align="center">
 
-    이름: <input type="text" name="uname"><br>
-    아이디: <input type="text" name="uid"><br>
-    비밀번호: <input type="password" name="upw"><br>
-    연락처: <input type="text" name="uphone1" size="5">-<input type="text" name="uphone2" size="5">-<input type="text" name="uphone3" size="5"><br>
-    사진: <input type="file" name="upic"><br>
-    성별: <input type="radio" name="gender" value="m">남 <input type="radio" name="gender" value="w">여<br>
-    사용언어: <input type="checkbox" name="lan" value="ko" checked="checked">한국<input type="checkbox" name="lan" value="eng">영어
-    <input type="checkbox" name="lan" value="chi">중국<input type="checkbox" name="lan" value="jap">일본<br>
-    자기소개: <textarea rows="5" cols="20">자기소개를 해주세요.</textarea><br>
-    국적: <select>
-           <option>한국</option>
-           <option>미국</option>
-           <option>중국</option>
-           <option>기타</option>
-          </select><br>
-    좋아하는 음식: <select multiple="multiple">
-        <option>치킨</option>
-        <option>피자</option>
-        <option>짜장면</option>
-        <option>떡볶이</option>
-        </select><br>
-     <input type="submit">
+        이름: <input type="text" name="uname"><br>
+        아이디: <input type="text" name="uid"><br>
+        비밀번호: <input type="password" name="upw"><br>
+        연락처: <input type="text" name="uphone1" size="5">-<input type="text" name="uphone2" size="5">-<input type="text" name="uphone3" size="5"><br>
+        사진: <input type="file" name="upic"><br>
+        성별: <input type="radio" name="gender" value="m">남 <input type="radio" name="gender" value="w">여<br>
+        사용언어: <input type="checkbox" name="lan" value="ko" checked="checked">한국<input type="checkbox" name="lan" value="eng">영어
+        <input type="checkbox" name="lan" value="chi">중국<input type="checkbox" name="lan" value="jap">일본<br>
+        자기소개: <textarea rows="5" cols="20">자기소개를 해주세요.</textarea><br>
+        국적: <select>
+            <option>한국</option>
+            <option>미국</option>
+            <option>중국</option>
+            <option>기타</option>
+            </select><br>
+        좋아하는 음식: <select multiple="multiple">
+            <option>치킨</option>
+            <option>피자</option>
+            <option>짜장면</option>
+            <option>떡볶이</option>
+            </select><br><br>
+        <input type="submit">
 
-</form>
+    </form>
+   
+</div><br>
+<div>
+    <hr>
+    <ul>
+        <li>마케팅 및 홍보 목적으로 사용되는데 동의하시겠습니까? <input type="radio" name="yes_no" value="yes" checked>예
+            <input type="radio" name="yes_no" value="no">아니오</li>
+        <li>마케팅 및 홍보 관련 정보를 받으시려면 선택하세요. <input type="checkbox" name="method" value="sns">SNS
+            <input type="checkbox" name="method" value="call">전화</li>
+        <li>Introduce Yourself 설문지 만족도 
+            <select>
+                <option>만족</option>
+                <option>보통</option>
+                <option>불만족</option>
+            </select>
+        </li>  
+    </ul>
+</div>
 </body>
 </html>
